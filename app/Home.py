@@ -1,34 +1,39 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="SF Housing Intelligence Platform",
-    page_icon="🏠",
+    page_title="SF Housing Rent Intelligence Platform",
     layout="wide"
 )
 
-st.title("🏠 SF Housing Intelligence Platform")
+st.title("SF Housing Rent Intelligence Platform")
+
+st.caption("Interactive Rental Market Analytics for San Francisco")
+
+st.divider()
 
 st.markdown("""
-### End-to-End Data Analytics Project
+## Welcome
 
-This platform analyzes over **546,000** San Francisco housing records and provides:
+This platform analyzes more than **546,000** San Francisco rental records collected by the San Francisco Rent Board.
 
-- 📊 Market analytics
-- 🗺️ Neighborhood comparison
-- 🤖 Machine learning rent prediction
-- 💬 AI-powered housing insights
+The project demonstrates an end-to-end analytics workflow, including:
+
+- Data Engineering
+- ETL Pipeline
+- Data Validation
+- Exploratory Data Analysis
+- Feature Engineering
+- Machine Learning
+- Geospatial Analytics
+- Interactive Dashboard
 """)
 
-st.info("Use the navigation menu on the left to explore the platform.")
+st.divider()
 
-st.markdown("---")
-
-st.subheader("Technology Stack")
-
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.metric("Dataset", "546K+")
+    st.metric("Rental Records", "546K+")
 
 with col2:
     st.metric("Neighborhoods", "41")
@@ -36,12 +41,64 @@ with col2:
 with col3:
     st.metric("ML Models", "3")
 
-st.markdown("---")
+with col4:
+    st.metric("Interactive Maps", "GeoJSON")
 
-st.write(
-    """
-    This project demonstrates the complete analytics lifecycle:
+st.divider()
 
-    **Data Profiling → ETL → Validation → EDA → Feature Engineering → Machine Learning → Interactive Dashboard**
-    """
-)
+st.subheader("Explore")
+
+st.info("""
+Use the navigation menu on the left to explore:
+
+• About Me
+
+• Market Overview
+
+• Neighborhood Explorer
+
+• Neighborhood Comparison
+
+• Rent Predictor
+
+• Machine Learning Insights
+
+• Methodology
+""")
+
+st.divider()
+
+st.subheader("Technology Stack")
+
+c1, c2, c3 = st.columns(3)
+
+with c1:
+    st.markdown("""
+### Programming
+
+- Python
+- SQL
+- Git
+""")
+
+with c2:
+    st.markdown("""
+### Analytics
+
+- Pandas
+- NumPy
+- Scikit-Learn
+""")
+
+with c3:
+    st.markdown("""
+### Visualization
+
+- Streamlit
+- Plotly
+- GeoJSON
+""")
+
+st.divider()
+
+ 
