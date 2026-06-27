@@ -10,7 +10,6 @@ from pathlib import Path
 
 st.set_page_config(
     page_title="Rent Predictor",
-    page_icon="💰",
     layout="wide"
 )
 
@@ -93,7 +92,7 @@ CURRENT_YEAR = 2026
 # Page Header
 # ==========================================================
 
-st.title("💰 Rent Predictor")
+st.title(" Rent Predictor")
 
 st.caption(
     "Estimate monthly rental prices using a trained Random Forest machine learning model."
@@ -105,7 +104,7 @@ st.divider()
 # Sidebar - Property Information
 # ==========================================================
 
-st.sidebar.title("🏠 Property Information")
+st.sidebar.title("Property Information")
 
 # Neighborhood
 

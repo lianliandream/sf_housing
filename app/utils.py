@@ -5,7 +5,11 @@ APP_DIR = Path(__file__).resolve().parent
 # ----------------------------------------------------
 # Directories
 # ----------------------------------------------------
-CSS_PATH = APP_DIR / "styles" / "main.css"
+CSS_CANDIDATES = [
+    APP_DIR / "styles" / "main.css",
+    APP_DIR / "stlyes" / "main.css",
+]
+CSS_PATH = next((path for path in CSS_CANDIDATES if path.exists()), CSS_CANDIDATES[0])
 
 def load_css():
     with open(CSS_PATH, encoding="utf-8") as f:
@@ -34,10 +38,9 @@ GEOJSON_PATH = (
     / "sf_analysis_neighborhoods.geojson"
 )
 
-CSS_PATH = (
-    APP_DIR
-    / "styles"
-    / "main.css"
+CSS_PATH = next(
+    (path for path in CSS_CANDIDATES if path.exists()),
+    CSS_CANDIDATES[0],
 )
 
 # ----------------------------------------------------

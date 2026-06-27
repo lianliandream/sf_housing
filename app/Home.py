@@ -8,13 +8,15 @@ st.set_page_config(
 st.title("SF Housing Rent Intelligence Platform")
 
 st.caption("Interactive Rental Market Analytics for San Francisco")
-
 st.divider()
 
 st.markdown("""
 ## Welcome
 
 This platform analyzes more than **546,000** San Francisco rental records collected by the San Francisco Rent Board.
+
+**Data Source:**  
+[San Francisco Rent Board – Rent Board Housing Inventory Data](https://data.sfgov.org/)
 
 The project demonstrates an end-to-end analytics workflow, including:
 
@@ -43,28 +45,6 @@ with col3:
 
 with col4:
     st.metric("Interactive Maps", "GeoJSON")
-
-st.divider()
-
-st.subheader("Explore")
-
-st.info("""
-Use the navigation menu on the left to explore:
-
-• About Me
-
-• Market Overview
-
-• Neighborhood Explorer
-
-• Neighborhood Comparison
-
-• Rent Predictor
-
-• Machine Learning Insights
-
-• Methodology
-""")
 
 st.divider()
 
@@ -100,5 +80,24 @@ with c3:
 """)
 
 st.divider()
+
+st.subheader("Explore")
+
+st.info("""
+Use the navigation menu on the left to explore:
+
+• Market Overview
+
+• Neighborhood Explorer
+
+• Neighborhood Comparison
+
+• Rent Predictor
+        
+• About Me
+""")
+
+st.divider()
+
 
  

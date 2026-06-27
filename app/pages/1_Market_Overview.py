@@ -170,7 +170,7 @@ with right:
         y="rent",
         color="bedrooms",
         hover_name="neighborhood",
-        title="Rent vs Square Footage"
+        title="Monthly Rent vs Square Footage"
     )
 
     st.plotly_chart(
@@ -189,3 +189,4 @@ st.dataframe(
     ),
     use_container_width=True
 )
+st.divider()

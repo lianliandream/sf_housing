@@ -18,8 +18,6 @@ DATA_PATH = (
 
 df = pd.read_csv(DATA_PATH)
 
-
-
 df = df.rename(columns={
     "analysis_neighborhood": "neighborhood",
     "monthly_rent_mid": "rent",
@@ -52,7 +50,6 @@ st.divider()
 # -------------------------------------------------------
 # Recommendation Engine
 # -------------------------------------------------------
- 
 
  
 recommendation_type = st.selectbox(
@@ -137,4 +134,11 @@ st.success(message)
 st.dataframe(
     recommendation.round(2),
     use_container_width=True
+)
+
+
+st.divider()
+st.caption(
+    " '*' Value Score = (Average Square Footage ÷ Average Monthly Rent) × 1,000. "
+    "Higher scores indicate more living space per dollar of rent."
 )

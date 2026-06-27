@@ -1,0 +1,108 @@
+/* About Me page styles */
+.aboutme-roadmap-card {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  padding: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.06);
+}
+
+.aboutme-roadmap-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aboutme-roadmap-subtitle {
+  color: #475569;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.aboutme-timeline-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  background: #f8fafc;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.aboutme-timeline-item:hover {
+  transform: translateX(2px);
+  background: #eff6ff;
+}
+
+.aboutme-timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2563eb;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.aboutme-timeline-year {
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.aboutme-timeline-text {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.aboutme-icon-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aboutme-icon-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #eef2ff;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+}
+
+.aboutme-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.aboutme-icon-label {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.aboutme-skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.aboutme-skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+  color: #1f2937;
+  font-size: 0.92rem;
+}
