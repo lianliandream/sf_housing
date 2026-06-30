@@ -4,7 +4,7 @@ import plotly.express as px
 from pathlib import Path
 import json
 
-st.title("San Francisco Housing Rent Market Overview")
+st.title("San Francisco Housing Rental Market Overview")
 
 # -------------------------------------------------------
 # Load data

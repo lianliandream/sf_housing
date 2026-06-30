@@ -1,0 +1,61 @@
+/* ---------- Footer ---------- */
+
+.app-footer {
+  margin-top: 70px;
+
+  padding: 40px 0 30px;
+
+  text-align: center;
+}
+
+.footer-divider {
+  height: 1px;
+
+  background: #e5e7eb;
+
+  margin-bottom: 35px;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+
+  color: #243447;
+}
+
+.footer-content p {
+  color: #667085;
+
+  font-size: 15px;
+
+  margin: 6px 0;
+}
+
+.footer-tech {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 18px 0;
+
+  flex-wrap: wrap;
+
+  font-size: 14px;
+
+  color: #355c7d;
+
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  color: #98a2b3;
+}

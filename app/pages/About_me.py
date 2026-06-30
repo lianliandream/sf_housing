@@ -27,9 +27,9 @@ milestones = [
     ("2025–Present", "Focusing on analytics, machine learning, and projects that bridge data and business.", "🔧", "Engineering"),
 ]
 
-st.markdown("### About me")
-st.caption("International cruise ships → Publishing → UC San Diego → Georgia Tech → ?")
-
+st.markdown(""" ### About me
+##### International cruise ships → Publishing → UC San Diego → Georgia Tech → ?
+""")
 for year, text, icon, label in milestones:
     col_left, col_right = st.columns([2, 1])
     with col_left:
